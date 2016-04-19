@@ -1,4 +1,4 @@
-package com.company;
+package mu.lambda;
 
 /**
  * Created by mstritzinger on 4/18/16.

@@ -1,4 +1,4 @@
-package com.company;
+package mu.lambda;
 
 import org.javatuples.Pair;
 
