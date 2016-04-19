@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CellularAutomaton:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CellularAutomaton_jar</output-path>
+    <root id="archive" name="CellularAutomaton.jar">
+      <element id="module-output" name="CellularAutomaton" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javatuples-1.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="org.javatuples:javatuples:1.2" />
+    </root>
+  </artifact>
+</component>
