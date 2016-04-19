@@ -118,7 +118,6 @@ public class AutomatonGridType2 implements AutomatonGrid {
 
                     // We need to move
                     if (numOccupiedNeighbs.get(cellType.X) < 2) {
-                        System.out.println(cell.toString() + " has fewer than two neighbors, gonna move");
 
                         // We need a set of all possible spaces. We are going to randomly remove one in each iteration
                         Set<Pair<Integer, Integer>> searchSet = new HashSet<>(unoccupiedNew);
@@ -135,7 +134,6 @@ public class AutomatonGridType2 implements AutomatonGrid {
                                 newGrid[cell.getValue0()][cell.getValue1()] = cellType.Unocc;
                                 unoccupiedNew.remove(space);
                                 unoccupiedNew.add(cell);
-                                System.out.println(space.toString() + " was the final position");
                                 break;
                             }
                         }
