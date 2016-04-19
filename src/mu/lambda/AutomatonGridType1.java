@@ -35,8 +35,8 @@ public class AutomatonGridType1 implements AutomatonGrid {
     }
     public String toString() {
         String repr = "";
-        for (int i = 0; i < this.m; i++) {
-            for(int j = 0; j < this.n; j++) {
+        for (int j = 0; j < this.n; j++) {
+            for(int i = 0; i < this.m; i++) {
                 if (this.grid[i][j]) {
                     repr += "+ ";
                 }
@@ -52,7 +52,7 @@ public class AutomatonGridType1 implements AutomatonGrid {
     private int numOccupiedNeighbors(int x, int y) {
         int numOccupiedNeighbors = 0;
         for (int i = Math.max((x - 1), 0); i <= Math.min((x + 1), this.m - 1); i++) {
-            for (int j = Math.max((y - 1), 0); j <= Math.min((y + 1), this.m - 1); j++) {
+            for (int j = Math.max((y - 1), 0); j <= Math.min((y + 1), this.n - 1); j++) {
                if (grid[i][j] && !(i == x && j == y)) {
                    numOccupiedNeighbors += 1;
                }
