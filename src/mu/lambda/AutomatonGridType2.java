@@ -54,8 +54,8 @@ public class AutomatonGridType2 implements AutomatonGrid {
     }
     public String toString() {
         String repr = "";
-        for (int i = 0; i < this.m; i++) {
-            for(int j = 0; j < this.n; j++) {
+        for (int j = 0; j < this.n; j++) {
+            for(int i = 0; i < this.m; i++) {
                 if (this.grid[i][j] == cellType.X) {
                     repr += "x ";
                 }
@@ -85,11 +85,6 @@ public class AutomatonGridType2 implements AutomatonGrid {
             }
         }
         return numOccupiedNeighbs;
-    }
-    private cellType edgeHandler (int i, int j) {
-        Map<cellType, Integer> numOccupiedNeighbs = numOccupiedNeighbors(i, j);
-        cellType defaultReturn = cellType.X;
-        return defaultReturn;
     }
 
     public void runIteration() {
